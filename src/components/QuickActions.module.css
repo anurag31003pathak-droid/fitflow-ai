@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 15px;
+    gap: 10px;
+    width: 100%;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    background: black;
+    border-bottom: 1px solid #333;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.chip {
+    background: black;
+    border: 1px solid var(--accent-secondary);
+    color: var(--accent-secondary);
+    padding: 6px 12px;
+    border-radius: 0;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.chip:hover {
+    background: var(--accent-secondary);
+    color: black;
+    box-shadow: 0 0 10px var(--accent-secondary);
+}
