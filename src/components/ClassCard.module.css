@@ -111,6 +111,9 @@
     height: 100%;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.8), transparent);
     transition: 0.5s;
+    pointer-events: none;
+    /* Ensure clicks pass through */
+    z-index: 1;
 }
 
 .bookBtn:hover::before {

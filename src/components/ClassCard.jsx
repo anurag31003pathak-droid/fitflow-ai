@@ -18,7 +18,6 @@ const ClassCard = ({ classInfo, onBook }) => {
                 <button
                     className={styles.bookBtn}
                     onClick={() => onBook(id)}
-                    disabled={slots === 0}
                 >
                     {slots > 0 ? 'Book Now' : 'Join Waitlist'}
                 </button>
